@@ -1,10 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions doatrixc an
-## The following set of functions achieve computing the inverse of a matrix and caching it 
-## and retrieving the cached value without resorting to re-computation.
 
-## Write a short comment describing this function
-## This function creates a special 'matrix' whihc is really a list 
+## The following set of functions achieve computing the inverse of a matrix and caching it 
+## and retrieving the cached value without resorting to re-computation of inverse.
+
+
+## This function creates a special 'matrix' which is really a list 
 ## containing a function to set and get the value of the matrix and set and get the 
 ## value of its inverse.
 
@@ -26,9 +25,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+
 ## This function returns the inverse of the matrix supplied to it. It uses 
-## caching to retrieve the inverse of the matrix in case it is already computed previously.
+## caching feature by determing if the cached value (the inverse of the matrix) in case 
+## it is already computed previously and if available.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
